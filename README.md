@@ -23,7 +23,7 @@ This project progressively builds generative sequence models of increasing compl
    - Generates multi-minute, structurally coherent compositions using Top-K and Temperature sampling.
 
 4. **Task 4: RLHF (Reinforcement Learning from Human Feedback)**
-   - *Bonus Task:* Fine-tunes the pretrained Transformer using the REINFORCE policy gradient algorithm.
+   - _Bonus Task:_ Fine-tunes the pretrained Transformer using the REINFORCE policy gradient algorithm.
    - Uses a programmatic heuristic reward function to penalize repetitive noise and reward melodic variance and structural grammar.
 
 ## Setup and Installation
@@ -31,12 +31,12 @@ This project progressively builds generative sequence models of increasing compl
 1. Clone the repository.
 
 2. Install the required dependencies:
-pip install -r requirements.txt
+   pip install -r requirements.txt
 
-3. Download the MAESTRO Dataset (MIDI-only) & place the maestro-v3.0.0.csv    and year folders into data/raw_maestro/
-
+3. Download the MAESTRO Dataset (MIDI-only) & place the maestro-v3.0.0.csv and year folders into data/raw_maestro/
 
 ## Execution Pipeline
+
 Execute the Jupyter notebooks in notebooks/ sequentially:
 
 00_eda.ipynb: Analyzes dataset distribution and derives proxy genres.
@@ -53,6 +53,10 @@ Execute the Jupyter notebooks in notebooks/ sequentially:
 
 06_task4_rlhf.ipynb: Fine-tunes the Transformer via RL.
 
-
 ## Generated Samples
+
 All generated .mid files, including baseline comparisons and final compositions, can be found in the "outputs/generated_midis/" directory. Checkpoints are stored in "outputs/checkpoints/" and performance charts in "outputs/plots/"
+
+
+
+![this folder was ignored(100GB)](image.png)
