@@ -1,0 +1,8 @@
+﻿data/raw_maestro/
+data/processed/*.npy
+venv_pytorch/
+venv_pytorch_gpu/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
