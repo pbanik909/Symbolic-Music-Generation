@@ -58,5 +58,5 @@ Execute the Jupyter notebooks in notebooks/ sequentially:
 All generated .mid files, including baseline comparisons and final compositions, can be found in the "outputs/generated_midis/" directory. Checkpoints are stored in "outputs/checkpoints/" and performance charts in "outputs/plots/"
 
 
-
+## Ignored Folder "data" ; size:100GB
 ![this folder was ignored(100GB)](image.png)

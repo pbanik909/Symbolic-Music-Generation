@@ -1,8 +1,28 @@
-﻿data/raw_maestro/
-data/processed/*.npy
+﻿# Ignore specific MAESTRO data files but keep directories
+data/processed/maestro_test_windows.npy
+data/processed/maestro_train_windows.npy
+data/processed/maestro_validation_windows.npy
+data/raw_maestro/maestro-v3.0.0.csv
+data/raw_maestro/maestro-v3.0.0.json
+data/raw_maestro/LICENSE
+data/raw_maestro/README
+data/raw_maestro/2004/
+data/raw_maestro/2006/
+data/raw_maestro/2008/
+data/raw_maestro/2009/
+data/raw_maestro/2011/
+data/raw_maestro/2013/
+data/raw_maestro/2014/
+data/raw_maestro/2015/
+data/raw_maestro/2017/
+data/raw_maestro/2018/
+
+# Virtual environments
 venv_pytorch/
 venv_pytorch_gpu/
 .venv/
+
+# Python
 __pycache__/
 *.pyc
 .DS_Store
