@@ -59,4 +59,4 @@ All generated .mid files, including baseline comparisons and final compositions,
 
 
 ## Ignored Folder "data" ; size:100GB
-![this folder was ignored(100GB)](image.png)
+![alt text](ignored_folder_structure(data).png)
