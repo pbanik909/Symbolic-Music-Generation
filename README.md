@@ -67,14 +67,14 @@ The project implements a progression of unsupervised generative models of increa
 
 ## 🎧 Generated Samples
 
-Audio (`.wav`) and MIDI (`.mid`) samples are in `outputs/generated_midis/`:
+Audio (`.wav`) and MIDI (`.mid`) samples are in [`outputs/generated_midis/`](outputs/generated_midis/):
 
 - `task1_BETTER_RECON_*` — autoencoder reconstructions vs. originals
 - `task2_vae_MUSICAL_*` — VAE generations
 - `task3_FIXED2_*` — Transformer generations
 - `markov_baseline.mid`, `random_baseline.mid` — baseline comparisons
 
-Training curves are in `outputs/plots/` (perplexity, reward, loss).
+Training curves are in [`outputs/plots/`](outputs/plots/) (perplexity, reward, loss).
 
 ---
 
@@ -101,7 +101,7 @@ pip install -r requirements.txt
 ```
 
 **2. Download MAESTRO (MIDI-only)**
-Download `maestro-v3.0.0-midi.zip` from the MAESTRO dataset page, and place the `maestro-v3.0.0.csv` and year folders into `data/raw_maestro/`.
+Download `maestro-v3.0.0-midi.zip` from the [MAESTRO dataset page](https://magenta.tensorflow.org/datasets/maestro), and place the `maestro-v3.0.0.csv` and year folders into `data/raw_maestro/`.
 
 **3. Build the dataset**
 ```bash
@@ -122,6 +122,25 @@ python train_rlhf_fixed.py         # Task 4: RLHF fine-tuning
 ## 🛠️ Tech Stack
 
 **PyTorch** · **pretty_midi** · **MidiTok (REMI)** · **NumPy** · **Matplotlib** · **MAESTRO v3.0.0**
+
+---
+
+## 📁 Repository Structure
+
+```
+├── src/
+│   ├── models/          # Autoencoder, VAE, Transformer, baselines
+│   ├── preprocessing/   # MIDI parsing, piano-roll, REMI tokenizer
+│   ├── training/        # training routines
+│   ├── generation/      # sampling & MIDI export
+│   └── evaluation/      # reward & metrics
+├── notebooks/           # EDA + per-task development notebooks
+├── outputs/
+│   ├── checkpoints/     # trained model weights
+│   ├── generated_midis/ # generated audio & MIDI
+│   └── plots/           # training curves
+└── build_data.py        # rebuild dataset from raw MAESTRO
+```
 
 ---
 
